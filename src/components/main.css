@@ -1,0 +1,36 @@
+
+a {
+  text-decoration: none;
+}
+.main-content {
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  margin: 5em;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column; 
+ }
+
+ .company-card {
+   width: 80%;
+   margin: 2em auto;
+ }
+
+ .positive-negative div {
+   padding: 1em;
+ }
+
+ .icon :hover {
+   cursor: pointer;
+ }
+
+ .peer-leader {
+   width: 20%;
+ }
