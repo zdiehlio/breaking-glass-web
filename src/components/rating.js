@@ -6,6 +6,7 @@ import Confidence from './confidence'
 import Development from './development'
 import Retention from './retention'
 import InteractionReport from './interactionReport'
+import Finished from './finished'
 
 
 class Rating extends Component {
@@ -40,7 +41,9 @@ renderSection() {
     case 'development':
       return <Retention onPress={this.handleRating} />
     case 'retention':
-      return <InteractionReport desciptionInput={this.handleText} />
+      return <InteractionReport onPress={this.handleRating} />
+    case 'finished':
+      return <Finished desciptionInput={this.handleText} />
   }
 }
   render() {
@@ -49,7 +52,6 @@ renderSection() {
     return(
       <div className='main-content'>
         {this.renderSection()}
-        <InteractionReport desciptionInput={this.handleText} />
       </div>
     )
   }
