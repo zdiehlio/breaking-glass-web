@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import RateCompany from './rateCompany'
 import PositiveNegative from './positiveNegative'
 import PeerLeader from './peerLeader'
 import Confidence from './confidence'
@@ -43,7 +44,7 @@ renderSection() {
     case 'retention':
       return <InteractionReport onPress={this.handleRating} />
     case 'finished':
-      return <Finished desciptionInput={this.handleText} />
+      return <Finished />
   }
 }
   render() {
